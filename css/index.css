@@ -1,0 +1,48 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+}
+
+#container {
+    background-color: red;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 2fr 2fr 1fr ;
+    grid-gap: 5px;
+}
+
+#bx1 {
+    background-color: blue;
+    grid-column: 1 / 6;
+}
+
+#bx2 {
+    background-color: chartreuse;
+    grid-row: 2 / 4;
+}
+
+#bx3 {
+    background-color: bisque;
+    grid-column: 2 / 6;
+    grid-row: 2 / 4;
+    display: flex;
+}
+
+.bx-footer {
+    background-color: yellow;
+}
+
+#bx3-izq {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bx3-der {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
